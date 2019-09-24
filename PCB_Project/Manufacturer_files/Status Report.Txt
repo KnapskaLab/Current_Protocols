@@ -1,0 +1,21 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [AURDINO_UNO.PrjPcb]
+   Generated File[FR.GTO]
+   Generated File[FR.GTP]
+   Generated File[FR.GTS]
+   Generated File[FR.GTL]
+   Generated File[FR.GBL]
+   Generated File[FR.GBS]
+   Generated File[FR.GBP]
+   Generated File[FR.GBO]
+   Generated File[FR.GM1]
+   Generated File[FR.RUL]
+   Generated File[FR.EXTREP]
+   Generated File[FR.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 11:36:11 AM On 8/31/2019
