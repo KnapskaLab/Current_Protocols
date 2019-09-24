@@ -1,0 +1,56 @@
+Get ready:
+
+1. PCB printed according to provided schematics with soldered components
+2. Arduino Uno 
+3. SD Card Module - EAN: 5903351241342
+4. SD card for sound file
+5. Amplifier - Volume Adjustable PAM8403 Amplifier Board
+6. Speaker - YD50-P 0,5W 8Ohm - 50x17mm
+7. IR diode - IR 333A EVL EAN: 9900002197030
+8. Shocker/Scrambler Module for Startle Reflex - Product Number: ENV-414SA-SR 
+9. Download "2000.wav" file
+10. Download and install Arduino IDE - https://www.arduino.cc/en/main/software
+11. Download and install Bonsai - https://bitbucket.org/horizongir/bonsai/downloads/ (those are for Windows only)
+12. Add "TMRpcm" library in Arduino IDE
+13. Install Bonsai packages: 
+   - Starter Pack
+   - Video Library
+14. Upload "2000.wav" file to SD card
+
+Arduino Code:
+
+1. Download file "fear_bonsai.ino" from repository
+2. Upload code to Arduino Board
+
+Bonsai Workflow:
+
+1. Depending on experiment download either "auditory_fear_10CS.bonsai" and "auditory_test_3CS.bonsai" or 
+   "context_fear_10CS.bonsai" 
+
+Assembly:
+
+1. Connect Arduino and Arduino modules to the PCB
+2. Connect the speaker to amplifier's No. 1 terminal block
+3. Slide in SD card into SD Card Module
+4. Connect Arduino to computer/external power source (if you're using a laptop remember to connect it to AC for 
+   proper setup grounding)
+   
+   WARNING - Always connect Arduino to power source first then connect shocker (Otherwise shocker will go to high 
+   state and continuously deliver current) 
+
+5. Connect IR diode to CN1 terminal block on PCB 
+6. Connect Arduino controller to shocker +/- screws
+7. Connect shocker to rods via D-type 9-pin connector
+8. Connect camera to your computer
+
+Getting Started:
+
+1. Test sound volume and shock delivery by typing "a" and pressing ENTER in Serial Monitor (Ctrl+Shift+M)
+2. Open Bonsai workflow of your choice. 
+3. Choose camera in "VideoCaptureDevice" node
+4. Specify file name and location in "VideoWriter" node (remember to add file extension at the end)
+5. Press START button in Bonsai - recording and behavioral paradigm won't start until 
+   "s" key is pressed
+6. Put your animals into chambers
+7. Press "s" key to start you paradigm
+ 
